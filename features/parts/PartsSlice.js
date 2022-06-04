@@ -1,8 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { addNotification } from "../notifications/NotificationsSlice";
 
 export const addPart = createAsyncThunk(
     'parts/addPart',
-    async (part, {rejectWithValue}) => {
+    async (part, {rejectWithValue, dispatch}) => {
         try {
             await new Promise((resolve) => {
                 setTimeout(() => {
@@ -13,6 +14,7 @@ export const addPart = createAsyncThunk(
             return part;
         }
         catch(error) {
+            dispatch(addNotification({text: error.message}))
             return rejectWithValue();
         }
     }
