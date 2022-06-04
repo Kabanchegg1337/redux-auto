@@ -61,6 +61,9 @@ export const partsSlice = createSlice({
                 return part;
             })
         })
+        .addCase(addPart.rejected, state => {
+            state.status = null;
+        })
     } 
 })
 
