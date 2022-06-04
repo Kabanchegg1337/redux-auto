@@ -1,0 +1,27 @@
+.part_list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    .part {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        span {
+            margin-right: 1rem;
+        }
+        button {
+            border: none;
+            outline: none;
+            background: none;
+            margin-left: auto;
+            cursor: pointer;
+        }
+    }
+}
