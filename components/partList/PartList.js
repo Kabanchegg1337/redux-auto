@@ -14,7 +14,7 @@ export default function PartList() {
         {parts.map(part => {
             return (
                 <li className={styles.part} key={part.id}>
-                    <span>Капот</span>
+                    <span>{part.name}</span>
                     <button onClick={() => handleClick(part)}>X</button>
                 </li>
             )
