@@ -4,9 +4,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     background: rgb(237, 72, 72);
     margin-bottom: 2rem;
+    .back, .map {
+        max-width: 1.75rem;
+        max-height: 1.75rem;
+        cursor: pointer;
+    }
     .info {
         display: flex;
         flex-direction: column;
@@ -22,8 +27,9 @@
         .subtitle {
             margin: 0;
             padding: 0;
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight: 300;
         }
     }
+    
 }
