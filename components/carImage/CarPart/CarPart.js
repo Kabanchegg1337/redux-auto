@@ -18,6 +18,6 @@ export default function CarPart({part}) {
     }, [status])
 
   return (
-    <path d={part.path} fill={part.damaged ? "#f00" : (clicked ? "#0f0" : "#000")} onClick={handleClick} />
+    <path d={part.path} stroke={part.damaged ? "#fac802" : (clicked ? "#fac802" : "#000")} fill="transparent" strokeWidth="1" onClick={handleClick} />
   )
 }

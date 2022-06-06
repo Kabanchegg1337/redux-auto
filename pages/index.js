@@ -20,6 +20,7 @@ export default function Home() {
       <main>
         <CarImage />
         <PartList />
+        <a className={styles.button} href='#'>Следующий шаг</a>
       </main>
     </div>
   )

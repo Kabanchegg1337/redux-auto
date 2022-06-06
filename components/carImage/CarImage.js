@@ -4,9 +4,9 @@ import styles from "./CarImage.module.scss";
 import CarPart from "./CarPart/CarPart";
 export default function CarImage() {
     const parts = useSelector(state => state.parts.data)
-    const defaultView = {x0: 0, y0: 0, x1: 989.12, y1: 1386.36}
+    const defaultView = {x0: 0, y0: 0, x1: 237, y1: 331}
     const [currentView, setCurrentView] = React.useState(
-      {x0: 0, y0: 0, x1: 989.12, y1: 1386.36}
+      {x0: 0, y0: 0, x1: 237, y1: 331}
     )
     const [mousePos, setMousePos] = React.useState({
       x: 0,
