@@ -4,7 +4,7 @@ import Header from '../components/header/Header'
 import Notifications from '../components/notifications/Notifications'
 import PartList from '../components/partList/PartList'
 import Preloader from '../components/preloader/Preloader'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
@@ -17,8 +17,10 @@ export default function Home() {
       <Preloader />
       <Notifications />
       <Header />
-      <CarImage />
-      <PartList />
+      <main>
+        <CarImage />
+        <PartList />
+      </main>
     </div>
   )
 }

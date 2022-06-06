@@ -2,9 +2,27 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
     svg {
-        margin-right: 1rem;
-        width: 200px;
+        width: 70%;
+    }
+    .zoom_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+            border: none;
+            outline: none;
+            width: 2rem;
+            height: 2rem;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.3);
+            &:first-child {
+                margin-bottom: 1rem;
+            }
+        }
     }
 }
